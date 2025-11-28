@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="nav-container">
         <nav class="navbar">
             <img src="images/logo.png" alt="Logo" class="logo">
 
@@ -32,12 +32,17 @@
     </div> 
     
     <div class="category-section">
-        <div class="category-heading">
-            <h2>Shop by Category</h2>
+        <div class="category-heading-box">
+            <h2 class="section-heading">Shop by Category</h2>
 
             <div class="category-controls">
-                <button>&#10216;</button>
-                <button>&#10217;</button>
+                <button>
+                    <img src="images/i-lt.svg" alt="Previous"> 
+                </button>
+
+                <button>
+                    <img src="images/i-gt.svg" alt="next">
+                </button>
             </div>
         </div>
 
@@ -81,11 +86,275 @@
             </div>
         </div>
     </div>
-
+  
     <div class="product-section">
-        <div class="product-heading">
-            <h2>Best Sellers</h2>
+        <div class="product-section-wrapper">
+            <div class="heading-box">
+                <h2>Most Loved</h2>
+                <p>From farm to home, from hand to heart, these are the products loved from start</p>
+            </div>
+
+            <div class="pc-nav">
+                <div class="pc-links-wrapper">
+                    <ul class="pc-links">
+                        <li>
+                            <a href="#">All</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Farm Fresh</a>
+                        </li>   
+
+                        <li>
+                            <a href="#">Dairy</a>
+                        </li>   
+
+                        <li>
+                            <a href="#">Staples</a>
+                        </li>   
+
+                        <li>
+                            <a href="#">Beverages</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Skin Care</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Baby Care</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Others</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pc-controls">
+                    <button>
+                        <img src="images/i-lt.svg" alt="Previous"> 
+                    </button>
+
+                    <button>
+                        <img src="images/i-gt.svg" alt="next">
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-scroll-wrapper">
+                <div class="product-wrapper">
+                    <div class="product-card">
+                         <div class="product-img-box">
+                            <img src="images/products/product-02.jpg" alt="Product 01">
+                            <div class="product-badge">Featured</div>
+                            <div class="product-emotion"></div>
+                         </div>
+
+                         <div class="p-content">
+                            <div class="p-name">
+                                <h4>Soully Crunch</h4>
+                                <div class="p-rating">4.5</div>
+                            </div>
+
+                            <div class="p-price">₹ 99</div>
+
+                            <p>Gluten free, No Added Colors, Sugar & Artificial Flavors </p>
+
+                            <button class="p-btn">View Details</button>
+                         </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img-box">
+                           <img src="images/products/product-02.jpg" alt="Product 01">
+                           <div class="product-badge">Featured</div>
+                           <div class="product-emotion"></div>
+                        </div>
+
+                        <div class="p-content">
+                           <div class="p-name">
+                               <h4>Soully Crunch</h4>
+                               <div class="p-rating">4.5</div>
+                           </div>
+
+                           <div class="p-price">₹ 99</div>
+
+                           <p>Gluten free, No Added Colors, Sugar & Artificial Flavors </p>
+
+                           <button class="p-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <img src="images/products/product-02.jpg" alt="Product 01">
+                            <div class="product-badge">Featured</div>
+                            <div class="product-emotion"></div>
+                        </div>
+
+                        <div class="p-content">
+                            <div class="p-name">
+                                <h4>Soully Crunch</h4>
+                                <div class="p-rating">4.5</div>
+                            </div>
+
+                            <div class="p-price">₹ 99</div>
+
+                            <p>Gluten free, No Added Colors, Sugar & Artificial Flavors </p>
+
+                            <button class="p-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <img src="images/products/product-02.jpg" alt="Product 01">
+                            <div class="product-badge">Featured</div>
+                            <div class="product-emotion"></div>
+                        </div>
+
+                        <div class="p-content">
+                            <div class="p-name">
+                                <h4>Soully Crunch</h4>
+                                <div class="p-rating">4.5</div>
+                            </div>
+
+                            <div class="p-price">₹ 99</div>
+
+                            <p>Gluten free, No Added Colors, Sugar & Artificial Flavors </p>
+
+                            <button class="p-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <div class="naurish-section">
+        <div class="heading-box">
+            <h2>Naurishment from Nature, Freshly Sourced</h2>
+            <p>We bring you pure organic products and wellness essentials, grown for you and the planet</p>
+        </div>
+
+        <div class="naurish-content">
+            <img src="images/nature-img-01.png" />
+        </div>
+
+        <button class="naurish-btn">Discover Soullylush</button>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog-section">
+            <div class="heading-box">
+                <h2>Blog</h2>
+            </div>
+
+            <div class="blog-scroll-wrapper">
+                <div class="blog-wrapper">
+                    <div class="blog-card">
+                        <div class="blog-image-box">
+                            <img src="images/blog-images/blog-img-01.jpg" />
+                        </div>
+
+                        <div class="blog-content">
+                            <h3>Health &amp; Wellness</h3>
+                            <p>Simple tips to boost your health and wellness naturally</p>
+
+                            <div class="about-blogger">
+                                <div class="blogger-img">
+    
+                                </div>
+
+                                <div class="bloginfo">
+                                    <h4>Irfan</h4>
+                                    <h5>08th July 2025 &middot; 5 mins read</h5>
+                                </div>
+                            </div>
+
+                            <button class="read-blog-btn">Read Organic</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image-box">
+                            <img src="images/blog-images/blog-img-01.jpg" />
+                        </div>
+
+                        <div class="blog-content">
+                            <h3>Health &amp; Wellness</h3>
+                            <p>Simple tips to boost your health and wellness naturally</p>
+
+                            <div class="about-blogger">
+                                <div class="blogger-img">
+    
+                                </div>
+
+                                <div class="bloginfo">
+                                    <h4>Irfan</h4>
+                                    <h5>08th July 2025 &middot; 5 mins read</h5>
+                                </div>
+                            </div>
+
+                            <button class="read-blog-btn">Read Organic</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image-box">
+                            <img src="images/blog-images/blog-img-01.jpg" />
+                        </div>
+
+                        <div class="blog-content">
+                            <h3>Health &amp; Wellness</h3>
+                            <p>Simple tips to boost your health and wellness naturally</p>
+
+                            <div class="about-blogger">
+                                <div class="blogger-img">
+    
+                                </div>
+
+                                <div class="bloginfo">
+                                    <h4>Irfan</h4>
+                                    <h5>08th July 2025 &middot; 5 mins read</h5>
+                                </div>
+                            </div>
+
+                            <button class="read-blog-btn">Read Organic</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image-box">
+                            <img src="images/blog-images/blog-img-01.jpg" />
+                        </div>
+
+                        <div class="blog-content">
+                            <h3>Health &amp; Wellness</h3>
+                            <p>Simple tips to boost your health and wellness naturally</p>
+
+                            <div class="about-blogger">
+                                <div class="blogger-img">
+    
+                                </div>
+
+                                <div class="bloginfo">
+                                    <h4>Irfan</h4>
+                                    <h5>08th July 2025 &middot; 5 mins read</h5>
+                                </div>
+                            </div>
+
+                            <button class="read-blog-btn">Read Organic</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="explore-blogs">Explore Blogs</a>
+        </div>
+    </div>
+
+
 </body>
 </html>
