@@ -1,492 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soullylush Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="nav-container">
-        <nav class="navbar">
-            <img src="images/logo.png" alt="Logo" class="logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <title>Soullylush - Organic Products</title>
+        <meta name="description" content="Pure organic products and wellness essentials, grown for you and the planet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- HEADER - Fixed Navigation -->
+        <header class="nav-container">
+            <nav class="navbar">
+                <img src="images/logo.png" alt="Soullylush Logo" class="logo">
 
-            <div class="nav-links">
-                <a href="#" class="nav-icon">
-                    <img src="images/i-cart.svg" alt="Cart">
-                </a>
+                <!-- Desktop Navigation Links (hidden on mobile) -->
+                <ul class="desktop-nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 
-                <a href="#" class="nav-icon">
-                    <img src="images/i-search.svg" alt="Search">
-                </a>
+                <div class="nav-links">
+                    <a href="#" class="nav-icon" aria-label="Search">
+                        <img src="images/i-search.svg" alt="">
+                    </a>
 
-                <a href="#" class="nav-icon">
-                    <img src="images/i-cart.svg" alt="Cart">
-                </a>
-            </div>
-        </nav>
-    </div>
+                    <a href="#" class="nav-icon" aria-label="Wishlist">
+                        <img src="images/i-heart.svg" alt="">
+                    </a>
 
-    <div class="banner">
-        <img src="images/banner.jpg" alt="Hero" class="hero">
-    </div> 
-    
-    <div class="category-section">
-        <div class="category-heading-box">
-            <h2 class="section-heading">Shop by Category</h2>
+                    <a href="#" class="nav-icon" aria-label="Cart">
+                        <img src="images/i-cart.svg" alt="">
+                    </a>
+                </div>
+            </nav>
+        </header>
 
-            <div class="category-controls">
-                <button>
-                    <img src="images/i-lt.svg" alt="Previous"> 
-                </button>
+        <main>
+            <!-- HERO BANNER -->
+            <section class="banner">
+                <img src="images/banner.jpg" alt="Fresh organic products from farm" class="hero">
+            </section>
+            
+            <!-- CATEGORY SECTION - Horizontal Scroll with Flexbox -->
+            <section class="category-section">
+                <div class="category-heading-box">
+                    <h2 class="section-heading">Shop by Category</h2>
 
-                <button>
-                    <img src="images/i-gt.svg" alt="next">
-                </button>
-            </div>
-        </div>
+                    <div class="category-controls">
+                        <button aria-label="Previous category">
+                            <img src="images/i-lt.svg" alt=""> 
+                        </button>
 
-        <div class="category-scroll-wrapper">
-            <div class="category-wrapper">
-                <div class="category-card">
-                    <img src="images/categories/i-favicon.png" alt="All" class="category-img" />
-                    
-                    <h3>All</h3>
+                        <button aria-label="Next category">
+                            <img src="images/i-gt.svg" alt="">
+                        </button>
+                    </div>
                 </div>
 
-                <div class="category-card">
-                    <img src="images/categories/i-dairy.png" alt="Farm Fresh" class="category-img" />
-                    
-                    <h3>Farm Fresh</h3>
+                <div class="category-scroll-wrapper">
+                    <div class="category-wrapper">
+                        <article class="category-card">
+                            <img src="images/categories/i-favicon.png" alt="" class="category-img">
+                            <h3>All</h3>
+                        </article>
+
+                        <article class="category-card">
+                            <img src="images/categories/i-dairy.png" alt="" class="category-img">
+                            <h3>Farm Fresh</h3>
+                        </article>
+
+                        <article class="category-card">
+                            <img src="images/categories/i-dairy.png" alt="" class="category-img">
+                            <h3>Dairy</h3>
+                        </article>
+
+                        <article class="category-card">
+                            <img src="images/categories/i-beverages.png" alt="" class="category-img">
+                            <h3>Beverages</h3>
+                        </article>
+
+                        <article class="category-card">
+                            <img src="images/categories/i-skinCare.png" alt="" class="category-img">
+                            <h3>Skin Care</h3>
+                        </article>
+
+                        <article class="category-card">
+                            <img src="images/categories/i-dairy.png" alt="" class="category-img">
+                            <h3>Baby Care</h3>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- PRODUCTS SECTION - Grid Layout -->
+            <section class="product-section">
+                <div class="product-section-wrapper">
+                    <div class="heading-box">
+                        <h2>Most Loved</h2>
+                        <p>From farm to home, from hand to heart, these are the products loved from start</p>
+                    </div>
+
+                    <!-- Product Category Navigation - Flexbox -->
+                    <nav class="pc-nav">
+                        <div class="pc-links-wrapper">
+                            <ul class="pc-links">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Farm Fresh</a></li>   
+                                <li><a href="#">Dairy</a></li>   
+                                <li><a href="#">Staples</a></li>   
+                                <li><a href="#">Beverages</a></li>
+                                <li><a href="#">Skin Care</a></li>
+                                <li><a href="#">Baby Care</a></li>
+                                <li><a href="#">Others</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="pc-controls">
+                            <button aria-label="Previous products">
+                                <img src="images/i-lt.svg" alt=""> 
+                            </button>
+
+                            <button aria-label="Next products">
+                                <img src="images/i-gt.svg" alt="">
+                            </button>
+                        </div>
+                    </nav>
+
+                    <!-- Products Grid with Flex Wrap -->
+                    <div class="product-scroll-wrapper">
+                        <div class="product-wrapper">
+                            <article class="product-card">
+                                <div class="product-img-box">
+                                    <img src="images/products/product-02.jpg" alt="Soully Crunch product">
+                                    <span class="product-badge">Featured</span>
+                                    <button class="product-emotion" aria-label="Add to wishlist"></button>
+                                </div>
+
+                                <div class="p-content">
+                                    <div class="p-name">
+                                        <h4>Soully Crunch</h4>
+                                        <span class="p-rating">4.5</span>
+                                    </div>
+
+                                    <span class="p-price">₹ 99</span>
+
+                                    <p>Gluten free, No Added Colors, Sugar & Artificial Flavors</p>
+
+                                    <button class="p-btn">View Details</button>
+                                </div>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-img-box">
+                                    <img src="images/products/product-02.jpg" alt="Soully Crunch product">
+                                    <span class="product-badge">Featured</span>
+                                    <button class="product-emotion" aria-label="Add to wishlist"></button>
+                                </div>
+
+                                <div class="p-content">
+                                    <div class="p-name">
+                                        <h4>Soully Crunch</h4>
+                                        <span class="p-rating">4.5</span>
+                                    </div>
+
+                                    <span class="p-price">₹ 99</span>
+
+                                    <p>Gluten free, No Added Colors, Sugar & Artificial Flavors</p>
+
+                                    <button class="p-btn">View Details</button>
+                                </div>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-img-box">
+                                    <img src="images/products/product-02.jpg" alt="Soully Crunch product">
+                                    <span class="product-badge">Featured</span>
+                                    <button class="product-emotion" aria-label="Add to wishlist"></button>
+                                </div>
+
+                                <div class="p-content">
+                                    <div class="p-name">
+                                        <h4>Soully Crunch</h4>
+                                        <span class="p-rating">4.5</span>
+                                    </div>
+
+                                    <span class="p-price">₹ 99</span>
+
+                                    <p>Gluten free, No Added Colors, Sugar & Artificial Flavors</p>
+
+                                    <button class="p-btn">View Details</button>
+                                </div>
+                            </article>
+
+                            <article class="product-card">
+                                <div class="product-img-box">
+                                    <img src="images/products/product-02.jpg" alt="Soully Crunch product">
+                                    <span class="product-badge">Featured</span>
+                                    <button class="product-emotion" aria-label="Add to wishlist"></button>
+                                </div>
+
+                                <div class="p-content">
+                                    <div class="p-name">
+                                        <h4>Soully Crunch</h4>
+                                        <span class="p-rating">4.5</span>
+                                    </div>
+
+                                    <span class="p-price">₹ 99</span>
+
+                                    <p>Gluten free, No Added Colors, Sugar & Artificial Flavors</p>
+
+                                    <button class="p-btn">View Details</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- NOURISHMENT SECTION - Simple Grid -->
+            <section class="nourish-section">
+                <div class="heading-box">
+                    <h2>Nourishment from Nature, Freshly Sourced</h2>
+                    <p>We bring you pure organic products and wellness essentials, grown for you and the planet</p>
                 </div>
 
-                <div class="category-card">
-                    <img src="images/categories/i-beverages.png" alt="Dairy" class="category-img" />
-                    
-                    <h3>Dairy</h3>
+                <div class="nourish-content">
+                    <img src="images/nature-img-01.png" alt="Fresh organic products from nature">
                 </div>
 
-                <div class="category-card">
-                    <img src="images/categories/i-skinCare.png" alt="Beverages" class="category-img" />
-                    
-                    <h3>Beverages</h3>
+                <button class="nourish-btn">Discover Soullylush</button>
+            </section>
+
+            <!-- BLOG SECTION - Flex Wrap -->
+            <section class="blog-container">
+                <div class="blog-section">
+                    <div class="heading-box">
+                        <h2>Blog</h2>
+                    </div>
+
+                    <div class="blog-scroll-wrapper">
+                        <div class="blog-wrapper">
+                            <article class="blog-card">
+                                <div class="blog-image-box">
+                                    <img src="images/blog-images/blog-img-01.jpg" alt="Health and wellness tips">
+                                </div>
+
+                                <div class="blog-content">
+                                    <h3>Health &amp; Wellness</h3>
+                                    <p>Simple tips to boost your health and wellness naturally</p>
+
+                                    <div class="about-blogger">
+                                        <div class="blogger-img"></div>
+
+                                        <div class="blog-info">
+                                            <h4>Irfan</h4>
+                                            <h5>08th July 2025 &middot; 5 mins read</h5>
+                                        </div>
+                                    </div>
+
+                                    <button class="read-blog-btn">Read Organic</button>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-image-box">
+                                    <img src="images/blog-images/blog-img-01.jpg" alt="Health and wellness tips">
+                                </div>
+
+                                <div class="blog-content">
+                                    <h3>Health &amp; Wellness</h3>
+                                    <p>Simple tips to boost your health and wellness naturally</p>
+
+                                    <div class="about-blogger">
+                                        <div class="blogger-img"></div>
+
+                                        <div class="blog-info">
+                                            <h4>Irfan</h4>
+                                            <h5>08th July 2025 &middot; 5 mins read</h5>
+                                        </div>
+                                    </div>
+
+                                    <button class="read-blog-btn">Read Organic</button>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-image-box">
+                                    <img src="images/blog-images/blog-img-01.jpg" alt="Health and wellness tips">
+                                </div>
+
+                                <div class="blog-content">
+                                    <h3>Health &amp; Wellness</h3>
+                                    <p>Simple tips to boost your health and wellness naturally</p>
+
+                                    <div class="about-blogger">
+                                        <div class="blogger-img"></div>
+
+                                        <div class="blog-info">
+                                            <h4>Irfan</h4>
+                                            <h5>08th July 2025 &middot; 5 mins read</h5>
+                                        </div>
+                                    </div>
+
+                                    <button class="read-blog-btn">Read Organic</button>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-image-box">
+                                    <img src="images/blog-images/blog-img-01.jpg" alt="Health and wellness tips">
+                                </div>
+
+                                <div class="blog-content">
+                                    <h3>Health &amp; Wellness</h3>
+                                    <p>Simple tips to boost your health and wellness naturally</p>
+
+                                    <div class="about-blogger">
+                                        <div class="blogger-img"></div>
+
+                                        <div class="blog-info">
+                                            <h4>Irfan</h4>
+                                            <h5>08th July 2025 &middot; 5 mins read</h5>
+                                        </div>
+                                    </div>
+
+                                    <button class="read-blog-btn">Read Organic</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <a href="#" class="explore-blogs">Explore Blogs</a>
+                </div>
+            </section>
+
+            <!-- TRUST SECTION - Horizontal Carousel with Flexbox -->
+            <section class="trust-section">
+                <div class="heading-box">
+                    <h2>Tested & Certified for Your Trust</h2>
                 </div>
 
-                <div class="category-card">
-                    <img src="images/categories/i-favicon.png" alt="Skin Care" class="category-img" />
-                    
-                    <h3>Skin Care</h3>
+                <div class="trust-carousel">
+                    <div class="trust-cards-wrapper">
+                        <article class="trust-card">
+                            <div class="trust-img">
+                                <img src="images/trust-npop.jpg" alt="NPOP Certification">
+                            </div>
+
+                            <div class="trust-info">
+                                <h3 class="trust-title">NPOP</h3>
+                                <p>India Organic Standard</p>
+                            </div>
+                        </article>
+
+                        <article class="trust-card">
+                            <div class="trust-img">
+                                <img src="images/trust-npop.jpg" alt="NPOP Certification">
+                            </div>
+
+                            <div class="trust-info">
+                                <h3 class="trust-title">NPOP</h3>
+                                <p>India Organic Standard</p>
+                            </div>
+                        </article>
+
+                        <article class="trust-card">
+                            <div class="trust-img">
+                                <img src="images/trust-npop.jpg" alt="NPOP Certification">
+                            </div>
+
+                            <div class="trust-info">
+                                <h3 class="trust-title">NPOP</h3>
+                                <p>India Organic Standard</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
 
-                <div class="category-card">
-                    <img src="images/categories/i-dairy.png" alt="Baby Care" class="category-img" />
-                    
-                    <h3>Baby Care</h3>
+                <div class="trust-carousel-bullets">
+                    <button class="trust-carousel-bullet active" aria-label="Slide 1"></button>
+                    <button class="trust-carousel-bullet" aria-label="Slide 2"></button>
+                    <button class="trust-carousel-bullet" aria-label="Slide 3"></button>
                 </div>
-            </div>
-        </div>
-    </div>
-  
-    <div class="product-section">
-        <div class="product-section-wrapper">
-            <div class="heading-box">
-                <h2>Most Loved</h2>
-                <p>From farm to home, from hand to heart, these are the products loved from start</p>
-            </div>
+            </section>
 
-            <div class="pc-nav">
-                <div class="pc-links-wrapper">
-                    <ul class="pc-links">
-                        <li>
-                            <a href="#">All</a>
-                        </li>
+            <!-- STORE SEARCH SECTION -->
+            <section class="store-container">
+                <div class="store-search">
+                    <div class="heading-box">
+                        <h2>Nearby Stores</h2>
+                    </div>
 
-                        <li>
-                            <a href="#">Farm Fresh</a>
-                        </li>   
+                    <div class="store-search-box">
+                        <input type="text" placeholder="Enter your location">
+                        <button type="button">Search</button>
+                    </div>
+                </div>
+            </section>
 
-                        <li>
-                            <a href="#">Dairy</a>
-                        </li>   
+            <!-- TESTIMONIALS SECTION - Horizontal Scroll with Flexbox -->
+            <section class="testimonial-section">
+                <div class="heading-box">
+                    <h2>What Our Customers Say</h2>
+                </div>
 
-                        <li>
-                            <a href="#">Staples</a>
-                        </li>   
+                <div class="testimonial-slider">
+                    <div class="testimonial-cards-wrapper">
+                        <article class="testimonial-card">
+                            <div class="testimonial-message">
+                                <img src="images/icons/inv-commas.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et.</p>
+                            </div>
 
-                        <li>
-                            <a href="#">Beverages</a>
-                        </li>
+                            <div class="testimonial-info">
+                                <h4 class="person-name">Kabir Singh</h4>
+                                <div class="stars">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                </div>
+                                <div class="person-pic"></div>
+                            </div>
+                        </article>
 
-                        <li>
-                            <a href="#">Skin Care</a>
-                        </li>
+                        <article class="testimonial-card">
+                            <div class="testimonial-message">
+                                <img src="images/icons/inv-commas.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et.</p>
+                            </div>
 
-                        <li>
-                            <a href="#">Baby Care</a>
-                        </li>
+                            <div class="testimonial-info">
+                                <h4 class="person-name">Kabir Singh</h4>
+                                <div class="stars">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                </div>
+                                <div class="person-pic"></div>
+                            </div>
+                        </article>
 
-                        <li>
-                            <a href="#">Others</a>
-                        </li>
+                        <article class="testimonial-card">
+                            <div class="testimonial-message">
+                                <img src="images/icons/inv-commas.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et.</p>
+                            </div>
+
+                            <div class="testimonial-info">
+                                <h4 class="person-name">Kabir Singh</h4>
+                                <div class="stars">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                    <img src="images/icons/yellow-star.JPG" alt="Star">
+                                </div>
+                                <div class="person-pic"></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER - Flexbox Layout -->
+        <footer class="footer-container">
+            <div class="footer">
+                <img src="images/logo-white.png" alt="Soullylush Logo" class="logo-footer">
+                <p>At Soullylush, we are more than brand we're family. Our products that bring comfort, style, and meaning to daily...</p>          
+
+                <div class="footer-links">
+                    <div class="link-item">
+                        <button class="item-header">
+                            <span>Our Roots</span>
+                            <img src="images/icons/arrow-down.svg" class="arrow" alt="">
+                        </button>
+
+                        <div class="item-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non orci sed velit bibendum.</p>
+                        </div>
+                    </div>
+                
+                    <div class="link-item">
+                        <button class="item-header">
+                            <span>Explore &amp; Shop</span>
+                            <img src="images/icons/arrow-down.svg" class="arrow" alt="">
+                        </button>
+
+                        <div class="item-content">
+                            <p>This is the second accordion content. Add your text here.</p>
+                        </div>
+                    </div>
+                
+                    <div class="link-item">
+                        <button class="item-header">
+                            <span>Support</span>
+                            <img src="images/icons/arrow-down.svg" class="arrow" alt="">
+                        </button>
+
+                        <div class="item-content">
+                            <p>Another section for your accordion. Content goes here.</p>
+                        </div>
+                    </div>
+
+                    <div class="link-item">
+                        <button class="item-header">
+                            <span>Policies</span>
+                            <img src="images/icons/arrow-down.svg" class="arrow" alt="">
+                        </button>
+                        
+                        <div class="item-content">
+                            <p>Another section for your accordion. Content goes here.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-links">
+                    <h4>Stay Connected</h4>
+                    <a href="#">Newsletter Sign up</a>
+                    <h4>Follow us</h4>
+
+                    <ul class="social-icons">
+                        <li><a href="#" aria-label="WhatsApp"></a></li>
+                        <li><a href="#" aria-label="Twitter"></a></li>
+                        <li><a href="#" aria-label="LinkedIn"></a></li>
+                        <li><a href="#" aria-label="Instagram"></a></li>
                     </ul>
+
+                    <h4>Download</h4>
+
+                    <div class="app-links">
+                        <a href="#"><img src="images/play-store-icon.png" alt="Download on Google Play"></a>
+                        <a href="#"><img src="images/app-store-icon.png" alt="Download on App Store"></a>
+                    </div>
                 </div>
 
-                <div class="pc-controls">
-                    <button>
-                        <img src="images/i-lt.svg" alt="Previous"> 
-                    </button>
+                <hr class="footer-divider">
 
-                    <button>
-                        <img src="images/i-gt.svg" alt="next">
-                    </button>
-                </div>
-            </div>
-
-            <div class="product-scroll-wrapper">
-                <div class="product-wrapper">
-                    <div class="product-card">
-                         <div class="product-img-box">
-                            <img src="images/products/product-02.jpg" alt="Product 01">
-                            <div class="product-badge">Featured</div>
-                            <div class="product-emotion"></div>
-                         </div>
-
-                         <div class="p-content">
-                            <div class="p-name">
-                                <h4>Soully Crunch</h4>
-                                <div class="p-rating">4.5</div>
-                            </div>
-
-                            <div class="p-price">₹ 99</div>
-
-                            <p>Gluten free, No Added Colors, Sugar & Artificial Flavors </p>
-
-                            <button class="p-btn">View Details</button>
-                         </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-img-box">
-                           <img src="images/products/product-02.jpg" alt="Product 01">
-                           <div class="product-badge">Featured</div>
-                           <div class="product-emotion"></div>
-                        </div>
-
-                        <div class="p-content">
-                           <div class="p-name">
-                               <h4>Soully Crunch</h4>
-                               <div class="p-rating">4.5</div>
-                           </div>
-
-                           <div class="p-price">₹ 99</div>
-
-                           <p>Gluten free, No Added Colors, Sugar & Artificial Flavors </p>
-
-                           <button class="p-btn">View Details</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-img-box">
-                            <img src="images/products/product-02.jpg" alt="Product 01">
-                            <div class="product-badge">Featured</div>
-                            <div class="product-emotion"></div>
-                        </div>
-
-                        <div class="p-content">
-                            <div class="p-name">
-                                <h4>Soully Crunch</h4>
-                                <div class="p-rating">4.5</div>
-                            </div>
-
-                            <div class="p-price">₹ 99</div>
-
-                            <p>Gluten free, No Added Colors, Sugar & Artificial Flavors </p>
-
-                            <button class="p-btn">View Details</button>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-img-box">
-                            <img src="images/products/product-02.jpg" alt="Product 01">
-                            <div class="product-badge">Featured</div>
-                            <div class="product-emotion"></div>
-                        </div>
-
-                        <div class="p-content">
-                            <div class="p-name">
-                                <h4>Soully Crunch</h4>
-                                <div class="p-rating">4.5</div>
-                            </div>
-
-                            <div class="p-price">₹ 99</div>
-
-                            <p>Gluten free, No Added Colors, Sugar & Artificial Flavors </p>
-
-                            <button class="p-btn">View Details</button>
-                        </div>
-                    </div>
+                <div class="copyright">
+                    <p>All Copyrights 2026 Reserved, Soullylush Private Ltd. Maintained by Image Corporation</p>
+                    <p>Crafted with ❤ from India</p>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="naurish-section">
-        <div class="heading-box">
-            <h2>Naurishment from Nature, Freshly Sourced</h2>
-            <p>We bring you pure organic products and wellness essentials, grown for you and the planet</p>
-        </div>
-
-        <div class="naurish-content">
-            <img src="images/nature-img-01.png" />
-        </div>
-
-        <button class="naurish-btn">Discover Soullylush</button>
-    </div>
-
-    <div class="blog-container">
-        <div class="blog-section">
-            <div class="heading-box">
-                <h2>Blog</h2>
-            </div>
-
-            <div class="blog-scroll-wrapper">
-                <div class="blog-wrapper">
-                    <div class="blog-card">
-                        <div class="blog-image-box">
-                            <img src="images/blog-images/blog-img-01.jpg" />
-                        </div>
-
-                        <div class="blog-content">
-                            <h3>Health &amp; Wellness</h3>
-                            <p>Simple tips to boost your health and wellness naturally</p>
-
-                            <div class="about-blogger">
-                                <div class="blogger-img">
-    
-                                </div>
-
-                                <div class="bloginfo">
-                                    <h4>Irfan</h4>
-                                    <h5>08th July 2025 &middot; 5 mins read</h5>
-                                </div>
-                            </div>
-
-                            <button class="read-blog-btn">Read Organic</button>
-                        </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <div class="blog-image-box">
-                            <img src="images/blog-images/blog-img-01.jpg" />
-                        </div>
-
-                        <div class="blog-content">
-                            <h3>Health &amp; Wellness</h3>
-                            <p>Simple tips to boost your health and wellness naturally</p>
-
-                            <div class="about-blogger">
-                                <div class="blogger-img">
-    
-                                </div>
-
-                                <div class="bloginfo">
-                                    <h4>Irfan</h4>
-                                    <h5>08th July 2025 &middot; 5 mins read</h5>
-                                </div>
-                            </div>
-
-                            <button class="read-blog-btn">Read Organic</button>
-                        </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <div class="blog-image-box">
-                            <img src="images/blog-images/blog-img-01.jpg" />
-                        </div>
-
-                        <div class="blog-content">
-                            <h3>Health &amp; Wellness</h3>
-                            <p>Simple tips to boost your health and wellness naturally</p>
-
-                            <div class="about-blogger">
-                                <div class="blogger-img">
-    
-                                </div>
-
-                                <div class="bloginfo">
-                                    <h4>Irfan</h4>
-                                    <h5>08th July 2025 &middot; 5 mins read</h5>
-                                </div>
-                            </div>
-
-                            <button class="read-blog-btn">Read Organic</button>
-                        </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <div class="blog-image-box">
-                            <img src="images/blog-images/blog-img-01.jpg" />
-                        </div>
-
-                        <div class="blog-content">
-                            <h3>Health &amp; Wellness</h3>
-                            <p>Simple tips to boost your health and wellness naturally</p>
-
-                            <div class="about-blogger">
-                                <div class="blogger-img">
-    
-                                </div>
-
-                                <div class="bloginfo">
-                                    <h4>Irfan</h4>
-                                    <h5>08th July 2025 &middot; 5 mins read</h5>
-                                </div>
-                            </div>
-
-                            <button class="read-blog-btn">Read Organic</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <a class="explore-blogs">Explore Blogs</a>
-        </div>
-    </div>
-
-    <div class="trust-section">
-        <div class="heading-box">
-            <h2>Tested & Certified for Your Trust</h2>
-        </div>
-
-        <div class="trust-carousel">
-            <div class="trust-cards-wrapper">
-                <div class="trust-card">
-                    <div class="trust-img">
-                        <img src="images/trust-npop.jpg" />
-                    </div>
-
-                    <div class="trust-info">
-                        <h2>NPOP</h2>
-                        <h3>India Organic Standard</h3>
-                    </div>
-                </div>
-
-                <div class="trust-card">
-                    <div class="trust-img">
-                        <img src="images/trust-npop.jpg" />
-                    </div>
-
-                    <div class="trust-info">
-                        <h2>NPOP</h2>
-                        <h3>India Organic Standard</h3>
-                    </div>
-                </div>
-
-                <div class="trust-card">
-                    <div class="trust-img">
-                        <img src="images/trust-npop.jpg" />
-                    </div>
-
-                    <div class="trust-info">
-                        <h2>NPOP</h2>
-                        <h3>India Organic Standard</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="trust-carousel-bullets">
-            <button class="trust-carousel-bullet" aria-label="Bullet 1"></button>
-            <button class="trust-carousel-bullet" aria-label="Bullet 2"></button>
-            <button class="trust-carousel-bullet" aria-label="Bullet 3"></button>
-        </div>
-    </div>
-
-    <div class="store-container">
-        <div class="store-search">
-            <div class="heading-box">
-                <h2>Nearby Stores</h2>
-            </div>
-
-            <div class="store-search-box">
-                <input type="text" placeholder="Search for products" />
-                <button>Search</button>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="testimonial-section">
-        <div class="heading-box">
-            <h2>Tested & Certified for Your Trust</h2>
-        </div>
-
-        <div class="testimonial-slider">
-            <div class="testimonial-cards-wrapper">
-                <div class="testimonial-card">
-                    <div class="testimonial-message">
-                        <img src="images/icons/inv-commas.jpg" />
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et.
-                        </p>
-                    </div>
-
-                    <div class="testimonial-info">
-                        <h5 class="person-name">Kabir Singh</h5>
-                        <div class="stars">
-                            <img src="images/icons/yellow-star.JPG" />
-                            <img src="images/icons/yellow-star.JPG" />
-                            <img src="images/icons/yellow-star.JPG" />
-                        </div>
-                        <div class="person-pic"></div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-message">
-                        <img src="images/icons/inv-commas.jpg" />
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et.
-                        </p>
-                    </div>
-
-                    <div class="testimonial-info">
-                        <h5 class="person-name">Kabir Singh</h5>
-                        <div class="stars">
-                            <img src="images/icons/yellow-star.JPG" />
-                            <img src="images/icons/yellow-star.JPG" />
-                            <img src="images/icons/yellow-star.JPG" />
-                        </div>
-                        <div class="person-pic"></div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-message">
-                        <img src="images/icons/inv-commas.jpg" />
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et.
-                        </p>
-                    </div>
-
-                    <div class="testimonial-info">
-                        <h5 class="person-name">Kabir Singh</h5>
-                        <div class="stars">
-                            <img src="images/icons/yellow-star.JPG" />
-                            <img src="images/icons/yellow-star.JPG" />
-                            <img src="images/icons/yellow-star.JPG" />
-                        </div>
-                        <div class="person-pic"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</body>
+        </footer>
+    </body>
 </html>
