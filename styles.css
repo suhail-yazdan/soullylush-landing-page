@@ -210,7 +210,7 @@ ul {
 .nav-icon {
     width: 32px;
     height: 32px;
-    background-color: #2aa220;
+    background-color: var(--color-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -817,7 +817,6 @@ ul {
    ============================================================= */
 .store-container {
     width: 100%;
-    background-color: #f5e6b3;
     background-image: url("images/bg-products.jpg");
     background-size: cover;
     background-position: center;
@@ -828,15 +827,13 @@ ul {
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: var(--spacing-xs) var(--spacing-lg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xl);
 }
 
 .store-search-box {
-    width: 100%;
     position: relative;
 }
 
@@ -859,6 +856,10 @@ ul {
     color: var(--color-gray);
 }
 
+.store-search-box:nth-of-type(2) input::placeholder {
+    color: var(--color-primary);
+}
+
 .store-search-box button {
     position: absolute;
     top: 50%;
@@ -875,6 +876,25 @@ ul {
 
 .store-search-box button:hover {
     background-color: var(--color-primary-hover);
+}
+
+.store-search-box:nth-of-type(1){
+    width: 100%;
+}
+
+.store-search-box:nth-of-type(2){
+    width: 70%;
+    
+}
+
+.store-search-box:nth-of-type(2) button{
+    background-color: transparent;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.store-search-box:nth-of-type(2) button:hover{
+    background-color: var(--color-primary-bg-light);
 }
 
 /* =============================================================
@@ -981,8 +1001,6 @@ ul {
     height: 100%;
     border-radius: var(--radius-round);
 }
-
-
 
 /* =============================================================
    FOOTER - FLEXBOX layout
@@ -1311,11 +1329,6 @@ ul {
         max-width: 300px;
     }
 
-    /* Store Search */
-    .store-search-box {
-        max-width: 500px;
-    }
-
     /* Footer */
     .footer {
         padding: var(--spacing-2xl);
@@ -1489,19 +1502,9 @@ ul {
     /* Store Search */
     .store-search {
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        padding-inline: var(--spacing-3xl);
     }
-
-    .store-search .heading-box {
-        width: auto;
-        padding: 0;
-    }
-
-    .store-search-box {
-        max-width: 400px;
-    }
-
+    
     /* Testimonials */
     .testimonial-section {
         padding: var(--spacing-2xl);
@@ -1629,12 +1632,6 @@ ul {
         width:45px;
         height: 45px;
     }
-
-
-    
-    
-    
-    
     
     /* Typography */
     .heading-box h2 {
@@ -1703,28 +1700,11 @@ ul {
         height: 300px;
     }
 
-    /* Nourishment Section */
-    /* .nourish-section {
-        padding: var(--spacing-3xl) var(--spacing-2xl);
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: var(--spacing-2xl);
-    }
-
-    .nourish-section .heading-box {
-        width: 100%;
-    }
-
-    .nourish-content {
-        max-width: 800px;
-    } */
-
     .nourish-content {
         grid-template-rows: repeat(12, 1fr);
     }
 
-   .nourish-content img {
+    .nourish-content img {
         grid-column: 4/10;
         grid-row: 1/13;
     }
@@ -1793,19 +1773,7 @@ ul {
 
     /* Store Search */
     .store-container {
-        padding: var(--spacing-2xl) 0;
-    }
-
-    .store-search {
-        padding: var(--spacing-lg) var(--spacing-3xl);
-    }
-
-    .store-search .heading-box h2 {
-        font-size: 1.5rem;
-    }
-
-    .store-search-box {
-        max-width: 500px;
+        padding: var(--spacing-xl) 0 var(--spacing-2xl);
     }
 
     /* Testimonials */
@@ -1889,6 +1857,10 @@ ul {
     .trust-card {
         min-width: 320px;
         max-width: 400px;
+    }
+
+    .store-search {
+        padding-inline: var(--spacing-xl);
     }
 
     .testimonial-card {
